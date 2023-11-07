@@ -1,0 +1,11 @@
+{% extends "!layout.html" %}
+{% block contentinfo %}
+<div class="wy-side-footer-info">
+    <!-- <small>
+        created: {{ file_create_time }}<br>
+        modified: {{ file_modified_time }}
+    </small> -->
+    <span id="timestamp"></span>
+</div>
+{{ super() }}
+{% endblock %}

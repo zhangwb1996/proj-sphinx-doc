@@ -1,0 +1,12 @@
+{% extends "!footer.html" %}
+{% block contentinfo %}
+<div class="wy-side-footer-info" hidden>
+    <small id="ctime-bak">
+        创建时间: {{ file_create_time }}
+    </small>
+    <small id="utime-bak">
+        上一次修改: {{ file_modified_time }}
+    </small>
+</div>
+{{ super() }}
+{% endblock %}

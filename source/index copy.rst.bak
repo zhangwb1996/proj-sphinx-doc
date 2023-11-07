@@ -1,0 +1,68 @@
+.. github.io documentation master file, created by
+   sphinx-quickstart on Sat Oct 14 21:56:40 2023.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+笔记
+=====================================
+
+.. toctree::
+   :maxdepth: 6
+   :hidden: 
+   :glob:
+
+   my-notes/c++/*
+   *
+
+
+.. toctree::
+   :hidden: 
+   :maxdepth: 2
+   :caption: database
+
+   my-notes/database/mysql/mysql.md
+
+
+.. toctree::
+   :hidden: 
+   :maxdepth: 3
+   :caption: git
+
+   my-notes/git/git常用命令.md
+   my-notes/git/git push 后，自动拉取仓库源码，自动部署.md
+
+
+
+.. toctree::
+   :hidden: 
+   :maxdepth: 4
+   :caption: linux
+
+   my-notes/linux/常用命令.md
+   my-notes/linux/ubuntu/ubuntu设置虚拟内存
+   my-notes/linux/ubuntu/VM ubuntu 手动设置局域网ip
+   my-notes/linux/vi/vi常用快捷操作
+
+
+.. toctree::
+   :hidden: 
+   :maxdepth: 5
+   :caption: nginx
+
+   my-notes/nginx/nginx集群，反向代理.md
+   my-notes/nginx/ssl.md
+
+
+.. toctree::
+   :hidden: 
+   :maxdepth: 6
+   :caption: test
+
+   my-notes/test/test
+
+.. Indices and tables
+.. ==================
+
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
