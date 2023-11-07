@@ -93,3 +93,4 @@ comments_config = {
 }
 
 # display_toc =True
+# numfig = True
