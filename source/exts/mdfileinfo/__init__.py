@@ -1,5 +1,5 @@
 import os
-import datetime
+from datetime import datetime
 import time
 
 # def get_file_time(app, docname):
@@ -24,11 +24,8 @@ def get_file_time(app, docname):
     doc_path = app.env.doc2path(docname)
     ctime = os.path.getctime(doc_path)
     mtime = os.path.getmtime(doc_path)
-    # print(doc_path)
-    # print(datetime.date.fromtimestamp(ctime))
-    # print(datetime.date.fromtimestamp(mtime))
-    # return datetime.date.fromtimestamp(ctime), datetime.date.fromtimestamp(mtime)
-    return time.ctime(ctime), time.ctime(mtime)
+    # return time.ctime(ctime), time.ctime(mtime)
+    return datetime.fromtimestamp(ctime), datetime.fromtimestamp(mtime)
 
 def setup(app):
     """
@@ -47,7 +44,7 @@ def add_file_time_to_context(app, pagename, templatename, context, doctree):
     if not docname:
         return
     ctime, mtime = get_file_time(app, docname)
-    # print(ctime)
-    # print(mtime)
-    context['file_create_time'] = ctime
-    context['file_modified_time'] = mtime
+    # context['file_create_time'] = ctime
+    # context['file_modified_time'] = mtime
+    context['file_create_time'] = ctime.strftime(app.config.file_time_format)
+    context['file_modified_time'] = mtime.strftime(app.config.file_time_format)

@@ -46,13 +46,13 @@ document.addEventListener("DOMContentLoaded", () => {
     timestamp.insertAdjacentHTML("afterend", `
       <br>
       <small id = "ctime" ></small>&nbsp&nbsp
-      <small id = "utime"></small>
+      <small id = "mtime"></small>
        `
     )
     var ctime = document.getElementById("ctime");
-    var utime = document.getElementById("utime");
+    var mtime = document.getElementById("mtime");
     ctime.innerHTML = document.getElementById("ctime-bak").innerText;
-    utime.innerHTML = document.getElementById("utime-bak").innerText;
+    mtime.innerHTML = document.getElementById("mtime-bak").innerText;
 
     time();
   }
