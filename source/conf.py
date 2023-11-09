@@ -25,7 +25,7 @@ extensions = [
 ]
 
 templates_path = ['_templates']
-exclude_patterns = ["my-notes/草稿","*/**/README.md"]
+exclude_patterns = ["my-notes/草稿","*/**/readme.md","*/**/README.md","genindex-all.rst","genindex.rst","search.rst"]
 language = 'zh_CN'
 
 # -- Options for HTML output -------------------------------------------------
