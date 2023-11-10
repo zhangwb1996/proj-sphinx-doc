@@ -10,7 +10,7 @@ import sys
 import os
 sys.path.append(os.path.abspath('exts'))
 
-project = 'zhangwb1996.github.io<br>lnvokerr\'s notes'
+project = 'zhangwb1996.github.io<br>lnvokerr just go ahead'
 copyright = '2023, lnvokerr'
 author = 'lnvokerr'
 
